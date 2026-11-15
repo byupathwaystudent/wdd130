@@ -31,6 +31,33 @@ header, main, footer {
 header {
     background-color: var(--primary-color);
     color: var(--accent2-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+header > img {
+    width: 100px;
+    height: auto;
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+
+nav a:hover {
+    color: var(--accent2-color);
 }
 
 /* Headings */
@@ -98,9 +125,28 @@ nav, p, section, article {
     margin: 0 0 10px 10px;
 }
 
-section h2{
+/* Sections */
+section {
+    margin: 20px 0;
+}
+
+section h2 {
     background-color: var(--primary-color);
     color: white;
     text-align: center;
     padding: 16px;
+    border-bottom: 4px solid var(--secondary-color);
+}
+
+/* Footer */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+footer p {
+    margin: 16px;
 }
