@@ -29,7 +29,7 @@ header, main, footer {
 
 /* Header */
 header {
-    background-color: white;
+    background-color: var(--primary-color);
     color: var(--accent2-color);
 }
 
