@@ -1,61 +1,75 @@
-:root{
 
+/* CSS Variables */
+:root {
     --primary-color: #055a05;
     --secondary-color: #f4a261;
     --accent1-color: #264653;
-    --accent2-color: #e9c46a; 
+    --accent2-color: #e9c46a;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
-
 }
 
-header {
-    /* background-color: var(--primary-color); */
-    background-color: white;
-    color: var(--accent2-color);
-}
-
-*{
+/* CSS Reset */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+/* General Styles */
+body {
     font-family: var(--body-font);
     color: var(--accent1-color);
 }
 
-header, main, footer{
+header, main, footer {
     width: 840px;
     margin: 0 auto;
 }
 
-h1, h2{
+/* Header */
+header {
+    background-color: white;
+    color: var(--accent2-color);
+}
+
+/* Headings */
+h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
+/* Navigation and Content Spacing */
 nav, p, section, article {
     margin: 16px;
     padding: 8px;
 }
 
+/* Social Media Links */
 .socialmedia a {
     text-decoration: none;
 }
 
-.hero{
+/* Social Media Icons */
+.socialmedia img {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
+
+/* Hero Section */
+.hero {
     position: relative;
 }
 
-.hero img{
+.hero > img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-h1{
+/* Hero Heading */
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -66,8 +80,27 @@ h1{
     color: white;
 }
 
-.hero article{
+/* Hero Article */
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 75%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 16px;
+}
+
+/* Article Image */
+.hero article img {
     float: right;
     width: 125px;
+    height: auto;
+    margin: 0 0 10px 10px;
+}
 
+section h2{
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 16px;
 }
