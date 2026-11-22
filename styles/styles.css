@@ -6,6 +6,7 @@
   box-sizing: border-box;
 }
 
+/* Navigation */
 nav {
   background-color: darkblue;
   padding: 10px;
@@ -23,27 +24,20 @@ nav a {
   font-weight: 700;
 }
 
+/* Headings */
 h1 {
   color: darkblue;
   padding: 10px;
   border-bottom: 2px solid black;
 }
 
+/* Images */
 img {
   width: 150px;
   height: auto;
   border: 1px solid black;
   padding: 2px;
   box-shadow: 0 0 30px grey;
-}
-
-p {
-  padding: 0;
-}
-
-aside {
-  text-align: center;
-  position: relative;
 }
 
 aside img {
@@ -55,6 +49,33 @@ main img {
   float: right;
 }
 
+/* Paragraphs */
+p {
+  padding: 0;
+}
+
+/* Aside */
+aside {
+  width: 20rem;
+  text-align: center;
+  position: relative;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+aside h2 {
+  position: absolute;
+  top: 50px;
+  left: 150px;
+}
+
+/* Main */
+main {
+  grid-column: 2/3;
+  margin: 1rem;
+}
+
+/* Footer */
 footer {
   margin-top: 15px;
   border-top: 1px solid #000;
@@ -70,20 +91,14 @@ footer {
   color: #000;
 }
 
-aside h2 {
-  position: absolute;
-  top: 50px;
-  left: 150px;
-  
-  /* color: white; */
-}
-
+/* Header, Footer and Grid Width */
 header, footer, .grid {
   max-width: 840px;
   margin: 0 auto;
 }
 
-.grid{
+/* CSS Grid */
+.grid {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  align-items: center;
 }
