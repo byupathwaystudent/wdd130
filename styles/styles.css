@@ -6,23 +6,27 @@
   box-sizing: border-box;
 }
 
-main {
-  max-width: 840px;
-}
-
 nav {
   background-color: darkblue;
   padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
 }
 
 nav a {
   color: white;
   display: block;
   padding: 20px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
 h1 {
   color: darkblue;
+  padding: 10px;
+  border-bottom: 2px solid black;
 }
 
 img {
@@ -38,7 +42,6 @@ p {
 }
 
 aside {
-  width: 30rem;
   text-align: center;
   position: relative;
 }
@@ -73,4 +76,14 @@ aside h2 {
   left: 150px;
   
   /* color: white; */
+}
+
+header, footer, .grid {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
